@@ -1,45 +1,58 @@
 ---
-title: "Your A4 Report Title (TODO: Revise title)"
-author: "Your Name"
-date: '2022-11-01'
+title: "Trends in Incarceration Rates in the U.S. (1970-2018)"
+author: "Anthony Lee"
+date: '2022-11-08'
 output: html_document
 ---
 
-```{r echo=FALSE, eval=TRUE, message=FALSE}
+```{r setup, include = FALSE}
 source("../source/a4-helpers.R")
 source("../source/analysis.R")
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Abstract 
-[TODO: Include a short abstract (about 50 words)]
-
-# Test (TODO: Remove before submission!!)
-```{r echo=FALSE}
-q1_string <- test_query1()
-num <- 5
-```
-As you know, this is a markdown report. The [R Markdown Cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf) is **useful!**
-
-* Here's a test of a dynamic variable. Say **"`r q1_string`!!!** 
-* Here's another test. A vector
-of numbers: `r test_query2(num)`.
-
-Recall that _{r echo=TRUE}_ can be used to display the code, 
-which is very useful when developing and debugging a report. Here's an example: 
-
-```{r echo=TRUE}
-num <- 5
-sum <- sum(test_query2(num))
-print(sum)
-```
+This report investigates the trends in the growth of the prison population in the U.S. from 1970 - 2018. It explores inequalities in incarceration rates based on location and population. This question is important because it investigates whether certain aspects may lead to higher incarceration rates in some areas.
 
 ## Introduction 
-[TODO]
+The data creates a starting point for people to identify and analyze possible causes for the unequal incarceration rates across the U.S. Challenging power requires evidence that outcomes are inequitable across groups. Like what is stated in Data Feminism, public data is important because solving a social issue requires co-liberation. By only focusing on the outcomes, the issue will never be solved because the root cause is never fixed. The root cause is instilled in society which is why co-liberation is so important in solving the issue and maintaining equality. The indirect stakeholders are people who may use the data set in conducting research. They analyze the data for trends to identify conclusions. The direct stakeholders are the people who are collecting and adding to the data. They directly impact the data set. The central values that are engaged is integrity and justice for all. The questions answered in the report are how incarceration rates are correlated to population and which regions in the U.S. have higher incarceration rates. From this data, we are able to identify possible causes of why certain regions have higher incarceration rates.
 
 ## Data Summary 
-[TODO]
 
-[TODO ... other sections ... See Canvas for details]
+The values generated in the data summary indicate that males account for a significantly large amount of the incarcerated population in the U.S. They are much more likely to be incarcerated when compared to females. In 2018, the average male population in jail across all counties in the U.S. was `r male_jail_pop_2018()`, while the average female population in jail was only `r female_jail_pop_2018()`. The county with the highest male jail population was `r county_highest_male()`, and the county with the highest female jail population was also `r county_highest_female()`. The change in the male jail population in the U.S. in 2018 compared to 1970 was `r male_change()`, while the change in the female jail population in the U.S. was only `r female_change()`. The values point to inequality with males representing a significantly larger proportion of the U.S. jail population.
+
+## Growth of the U.S. Prison Population
+
+```{r echo=FALSE}
+plot_jail_pop_for_us()
+```
+
+The key pattern revealed by the chart is that incarceration rates have been increasing almost every year from 1970 - 2018. The incarnation rates have more than quadrupled since 1970 from 200,000 to 800,000. The U.S. jail population remained stagnant from 1970 - 1978 and gradually increased until 2008 where it has slightly dropped. This may be due to simply population increases, but outside factors likely play a role too. A question that the chart presents is: **What has caused the incarceration numbers to increase so significantly and will it continue in the future?**
+
+## Growth of the U.S. Prison Population
+
+```{r echo=FALSE}
+plot_jail_pop_by_states(c("AL", "WA", "CO", "OR", "CA"))
+```
+
+The key pattern revealed in the line chart is that incarceration rates have significantly increased in California since the 1970s. This was probably because of a huge population boom. The incarceration numbers in Washington, Colorado, Oregon, and Alabama have increased slightly. However, Alabama has the second highest incarceration number outside of California even though it's population count is less than those of Washington and Colorado. A question that the chart presents is: **Why does Alabama have higher incarceration numbers when it has a smaller population?**
+
+## Incarceration in Relation to Population by County
+
+```{r echo=FALSE, message=FALSE}
+plot_get_female_male_pop()
+```
+
+A question that the bar chart answers is: **How does the growth of the male jail population in the U.S. compare to the female jail population from 1970-2018?** From the chart, both the male jail population and the female jail population in the U.S. have seen growth since 1970. However, the male jail population has increased at significantly faster rate which is shown by the steeper increase. The female jail population also seems to have stagnated in growth from the early 2000s, but the male jail population continued to grow until the late 2000s before it started to decrease. In 2018, the male jail population was over 600,000 while the female jail population was only at around 100,000 making the male jail population almost six times as large. Males are significantly more likely to be incarcerated and the rate of growth when compared to females shows that the problem is getting worse.
+
+## Incarceration Proportions by State
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+plot_get_prop_incarcerated_pop()
+```
+
+A question that the map answers is: **What states have the highest incarceration rates?** Based on the visualizations it is seen that States in the South and South East of the U.S. have the highest incarceration proportions with Louisiana having the highest proportion of incarceration rate. This is shown through the bright green color that colors the state. This may be because of economic inequality in the U.S. The states located in the North and North Eastern U.S have the lowest incarceration proportions based on the dark green color. The states that have higher incarceration proportions tend to be poorer states which may lead to more crime. 
+
 
 _All the very best with your work!_
 
