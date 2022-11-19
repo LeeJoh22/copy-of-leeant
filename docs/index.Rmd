@@ -37,13 +37,13 @@ plot_jail_pop_by_states(c("AL", "WA", "CO", "OR", "CA"))
 
 The key pattern revealed in the line chart is that incarceration rates have significantly increased in California since the 1970s. This was probably because of a huge population boom. The incarceration numbers in Washington, Colorado, Oregon, and Alabama have increased slightly. However, Alabama has the second highest incarceration number outside of California even though it's population count is less than those of Washington and Colorado. A question that the chart presents is: **Why does Alabama have higher incarceration numbers when it has a smaller population?**
 
-## Incarceration in Relation to Population by County
+## Male vs Female Incarceration in the U.S.
 
 ```{r echo=FALSE, message=FALSE}
 plot_get_female_male_pop()
 ```
 
-A question that the bar chart answers is: **How does the growth of the male jail population in the U.S. compare to the female jail population from 1970-2018?** From the chart, both the male jail population and the female jail population in the U.S. have seen growth since 1970. However, the male jail population has increased at significantly faster rate which is shown by the steeper increase. The female jail population also seems to have stagnated in growth from the early 2000s, but the male jail population continued to grow until the late 2000s before it started to decrease. In 2018, the male jail population was over 600,000 while the female jail population was only at around 100,000 making the male jail population almost six times as large. Males are significantly more likely to be incarcerated and the rate of growth when compared to females shows that the problem is getting worse.
+A question that the bar chart answers is: **How does the male jail population in the U.S. compare to the female jail population from 1970-2018?** From the chart, males are significantly more likely to be incarcerated when compared to females. If there was a line of best fit for the scatter plot, the slope of the line would be a lot smaller than one indicating that for every one male incarcerated, less than one female is incarcerated. It can also be seen that there are little to no outliers where the female jail population is significantly higher than the male jail population. 
 
 ## Incarceration Proportions by State
 
@@ -51,8 +51,8 @@ A question that the bar chart answers is: **How does the growth of the male jail
 plot_get_prop_incarcerated_pop()
 ```
 
-A question that the map answers is: **What states have the highest incarceration rates?** Based on the visualizations it is seen that States in the South and South East of the U.S. have the highest incarceration proportions with Louisiana having the highest proportion of incarceration rate. This is shown through the bright green color that colors the state. This may be because of economic inequality in the U.S. The states located in the North and North Eastern U.S have the lowest incarceration proportions based on the dark green color. The states that have higher incarceration proportions tend to be poorer states which may lead to more crime. 
+A question that the map answers is: **What states have the highest incarceration rates?** Based on the visualizations it is seen that states in the South and South East of the U.S. have the highest incarceration proportions with Louisiana having the highest proportion of incarceration rate. This is shown through the bright green color that colors the state. This may be because of economic inequality in the U.S. The states located in the North and North Eastern U.S have the lowest incarceration proportions based on the dark green color. The states that have higher incarceration proportions tend to be poorer states which may lead to more crime. 
 
 
-_All the very best with your work!_
+
 
