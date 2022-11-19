@@ -51,7 +51,7 @@ A question that the bar chart answers is: **How does the male jail population in
 plot_get_prop_incarcerated_pop()
 ```
 
-A question that the map answers is: **What states have the highest incarceration rates?** Based on the visualizations it is seen that states in the South and South East of the U.S. have the highest incarceration proportions with Louisiana having the highest proportion of incarceration rate. This is shown through the bright green color that colors the state. This may be because of economic inequality in the U.S. The states located in the North and North Eastern U.S have the lowest incarceration proportions based on the dark green color. The states that have higher incarceration proportions tend to be poorer states which may lead to more crime. 
+A question that the map answers is: **What states have the highest incarceration rates?** Based on the visualizations it is seen that states in the South and South East of the U.S. have the highest incarceration proportions with Louisiana having the highest proportion of incarceration rate. This is shown through the bright green color that colors the state. Thiso may be because of economic inequality in the U.S. The states located in the North and North Eastern U.S have the lowest incarceration proportions based on the dark green color. The states that have higher incarceration proportions tend to be poorer states which may lead to more crime. 
 
 
 
