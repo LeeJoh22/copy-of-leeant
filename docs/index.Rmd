@@ -35,7 +35,7 @@ The key pattern revealed by the chart is that incarceration rates have been incr
 plot_jail_pop_by_states(c("AL", "WA", "CO", "OR", "CA"))
 ```
 
-The key pattern revealed in the line chart is that incarceration rates have significantly increased in California since the 1970s. This was probably because of a huge population boom. The incarceration numbers in Washington, Colorado, Oregon, and Alabama have increased slightly. However, Alabama has the second highest incarceration number outside of California even though it's population count is less than those of Washington and Colorado. A question that the chart presents is: **Why does Alabama have higher incarceration numbers when it has a smaller population?**
+I chose Alabama, Washington, Colorado, Oregon, and California because they are very diverse in location and population. The key pattern revealed in the line chart is that incarceration rates have significantly increased in California since the 1970s. This was probably because of a huge population boom. The incarceration numbers in Washington, Colorado, Oregon, and Alabama have increased slightly. However, Alabama has the second highest incarceration number outside of California even though it's population count is less than those of Washington and Colorado. A question that the chart presents is: **Why does Alabama have higher incarceration numbers when it has a smaller population?**
 
 ## Male vs Female Incarceration in the U.S.
 
